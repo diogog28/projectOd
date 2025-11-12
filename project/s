@@ -1,0 +1,37 @@
+
+/* --- 1. Definição das Cores Customizadas --- */
+:root, [data-bs-theme="light"] {
+    --app-primary-castanho: #460069; /* Castanho escuro */
+    --app-secondary-amarelo: #fff700; /* Amarelo */
+    --app-note-bg: #FFF9C4; /* Fundo de Card de Nota (Amarelo claro) */
+    --bs-body-bg: #cda6f2; /* Fundo geral (Cinza claro do Light Mode) */
+    --bs-body-color: #191c1f; /* Texto escuro */
+}
+
+[data-bs-theme="dark"] {
+    --app-primary-castanho: #33241f; /* Castanho mais claro */
+    --app-secondary-amarelo: #a87706;
+    --app-note-bg: #3E2723; /* Fundo de Card de Nota (Castanho escuro) */
+    --bs-body-bg: #121212; /* Fundo geral (Preto do Dark Mode) */
+    --bs-body-color: #f8f9fa; /* Texto claro */
+}
+
+/* --- 2. Classes para Aplicar as Cores --- */
+.bg-app-primary { background-color: var(--app-primary-castanho) !important; }
+
+.btn-app-secondary { 
+    background-color: var(--app-secondary-amarelo) !important; 
+    border-color: var(--app-secondary-amarelo) !important;
+    color: #000 !important; /* Texto preto no botão amarelo */
+}
+
+.note-card { 
+    background-color: var(--app-note-bg); 
+    border-color: var(--app-primary-castanho) !important; 
+}
+
+/* --- 3. Ajuste de Layout (Evitar Sobreposição) --- */
+/* O conteúdo principal precisa de um padding no topo para não ficar por baixo da navbar fixa */
+main {
+    padding-top: 72px; 
+}
