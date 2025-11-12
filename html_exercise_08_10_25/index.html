@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="Description" content="Task A - Personal Splash Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="/IWB/html_exercise_08_10_25/css/style.css">
+    <style>
+        .thirdBox table{
+            th, td {
+            border: 1px solid black;
+            border-radius: 10px;
+        }   
+            tr:hover {
+                background-color: #D6EEEE;
+            }
+
+        }
+
+        .STSA{
+            text-align: center; 
+            vertical-align: middle;  
+        }
+    </style>
+
+    <!-- Page icon -->
+    <link rel="icon" type="image/x-icon" href="/IWB/html_exercise_08_10_25/images/image.png">
+
+    <title>Personal Splash Page</title>
+</head>
+<body>
+  <div class="page-background"></div>
+
+     <!-- ===============================
+         LEFT SIDEBAR SECTION
+         Contains page title, author name, and an image
+    ================================ -->
+    <div id="first "class="sideBar">
+
+        <h1 style="color: #adfd3ce6;">Personal Splash Page</h1>
+        <h2 style="color: #b9ff57e6;">Diogo Gonçalves</h2>
+
+        <!-- Sidebar image -->
+        <img class="imgLeft" 
+             src="/IWB/html_exercise_08_10_25/images/duck.png" 
+             alt="duck" 
+             width="200" 
+             height="auto">
+        
+        <p>Hello, my name is <strike>Diogo</strike> and this is the TASK A!.</p>
+    </div>
+
+    <!-- ===============================
+         MAIN CONTENT SECTION
+         Contains the quote box and two other content boxes
+    ================================ -->
+    <div class="mainContent">
+
+        <!-- FIRST BOX (Expandable Quote Box) -->
+        <div class="firstBox">
+            <!-- Quotation content -->
+            <blockquote cite="https://www.goodreads.com/quotes/10159916-if-you-can-get-1-percent-better-each-day-for">
+                <p>
+                    If you can get 1 percent better each day for one year, you’ll end up thirty-seven times better 
+                    by the time you’re done. Conversely, 
+                    <q><strong>if you get 1 percent worse each day for one year, you’ll 
+                    decline nearly down to zero.</strong></q> 
+                    What starts as a small win or a minor setback accumulates into something 
+                    much more.
+                </p>
+            </blockquote>
+
+            <!-- Citation -->
+            <p>— James Clear 
+                <cite>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</cite>
+            </p>
+        </div>
+
+        
+
+        <!-- SECOND BOX -->
+        <div class="secondBox">
+        <h2><strong>List's</strong></h2>
+        <ul>
+            <li>Unsorted 1 </li>
+            <li>Unsorted 2
+                
+                <ol>
+                    <li>Ordered A </li>
+                    <li>Ordered B </li>
+                    <li>Ordered C </li>
+                </ol>
+            </li>
+        </ul>
+        
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+        
+          
+        </div>
+
+        <!-- THIRD BOX -->
+        <div class="thirdBox">
+           
+        <h1>Weekly Class Schedule</h1>
+
+        <table>
+            <thead>
+                <tr style="background-color: #5c5c5e; color: #f4f4f4;">
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>10:00 11:30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="background-color: #8bdecd;    
+                    text-align: center; vertical-align: middle; ">CRT</td>
+                </tr>
+                
+                <tr>
+                    <td>11:45 13:15 </td>
+                    <td></td>
+                    <td style="background-color: #6e51cc;    
+                    text-align: center; vertical-align: middle; ">API</td>
+                    <td rowspan="2" style="background-color: #e0fc2d;    
+                    text-align: center; vertical-align: middle; ">IWB</td>
+                    <td></td>
+                    <td rowspan="2" style="background-color: #fcc82d;    
+                    text-align: center; vertical-align: middle; ">DVTF</td>
+
+            
+                </tr>
+                
+                <tr>
+                    <td>13:45 15:15 </td>
+                    <td  rowspan="2" class="STSA" style="background-color: #b0db2f;">ST SA</td>
+                    <td></td>
+                    <td  rowspan="2" class="STSA" style="background-color: #ec7db6;">ASD</td>
+
+                </tr>
+                
+                <tr>
+                    <td>15:30 17:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+      
+
+        </div>
+    </div>
+</body>
+</html>

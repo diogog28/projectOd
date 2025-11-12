@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio-DiogoGoncalves</title>
+
+    <style>
+        html, body{
+            height: 100%;
+            background-color: #00001A;
+        }
+        .leftMenu, .content {
+            transition: transform 0.3s ease; 
+        }
+
+        .leftMenu:hover, .content:hover {
+            transform: scale(1.02); 
+        }
+
+        .leftMenu{
+            width: 22%;
+            height: 95%;
+            float: left;
+            
+            display: flex;
+            flex-direction: column;  
+            align-items: center;      
+            justify-content: flex-start; 
+
+            box-shadow:-1px 2px 0.2em grey;
+            border-radius: 25px;
+
+            background-color: rgb(42, 58, 72);
+            padding: 15px; 
+
+        }
+
+        .leftMenu h1{
+            margin: 10%;        
+            text-align: center;
+            color: #aad6fb;
+            font-weight: bold;
+    
+        }
+
+        .leftContent{
+             
+            border: solid;
+            border-color: rgba(245, 245, 245, 0.159);
+
+            width: 90%;
+            flex: 3;                 
+            background: rgba(98, 111, 195, 0.475);
+            padding: 20px;          
+            border-radius: 25px;
+
+  
+        }
+
+        .leftContent img {
+            width: 100%;
+            height: auto;       
+            border-radius: 15px;
+        }
+
+        .leftContent a{
+            color: #b2dbff;
+        }
+
+  
+        .socials {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .socials img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .socials img:hover {
+            transform: scale(1.2);
+        }
+
+
+        .bio {
+            color: white;
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        .content {
+            width: 72%;
+            height: 95%;
+            float: right;
+
+            display: flex;
+            flex-direction: column;   /* empilha h1 e content-body */
+            box-shadow: -1px 2px 0.2em grey;
+            border-radius: 25px;
+            background-color: rgb(81, 118, 150);
+
+            padding: 15px; 
+        }
+
+        .content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #b2dbff;
+            font-weight: bold;
+        }
+
+        .content-body {
+            display: flex;         
+            gap: 20px;
+            flex: 1;  
+            text-align: justify;
+            color: white;
+
+        }
+       
+
+
+        .main {
+            flex: 3;                 
+            background: rgba(255,255,255,0.1);
+            padding: 20px;           
+            border-radius: 20px;    
+            position: relative;
+       
+
+        }
+
+        .experience {
+            flex: 1;                 
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 20px;
+            position: relative;
+    
+
+        }
+
+        .experience h2 {
+            color: #aad6fb;
+            margin-bottom: 10px;
+        }
+
+        .content h2 {
+            color: #aad6fb;
+            margin-bottom: 10px;
+        }
+
+
+        .skills {
+            list-style: none;      
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;       
+            gap: 10px;
+        }
+
+        .skills li {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+
+        .skills li:hover {
+            transform: scale(1.1);
+            background: rgba(255,255,255,0.3);
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 20px;
+            color: white;
+        }
+
+        .timeline-item::before {
+            content: "●";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #aad6fb;
+            font-size: 18px;
+        }
+
+        .year {
+            font-weight: bold;
+            color: #aad6fb;
+        }
+
+        
+    
+        
+    
+    </style>
+</head>
+
+<body>
+        <div class="leftMenu">
+            <h1>Diogo Gonçalves</h1>
+            <div class ='leftContent'>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"  
+                alt="profile" 
+                />
+
+                 <div class="socials">
+                    <a href="https://github.com/diogog28" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub" /></a>
+                    <a href="https://www.linkedin.com/in/diogo-gon%C3%A7alves-844a65264/" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" /></a>
+                    </div>
+
+                    <p class="bio">My name is Diogo Gonçalves, im from Portugal, im 24 years old. Im currently taking a Computer Science bachelor, 
+                    and im currently in my 3 year. Im happy and motivated to learn front-end developing, and also really enjoying knowing Latvia!</p>
+                        
+                     <a href="0110.html">back</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    <div class="content">
+    <h1>Portofolio</h1>
+
+    <div class="content-body">
+        <div class="main">
+        <h2>Tecnhical Information</h2>
+        
+        <p>I'm a developer passionate about technology, focused on creating creative and efficient solutions. Currently im learning front-end, and thats
+            makes me so happy, cause after this im able to undestand the back-end process. I had an experience before with back-end, first one was with Python
+            and i use the framework Flask, to create a restAPI, from a postgreSQL database, that i also create. After that experience i had one more time and experience
+            but this time with PHP, Laravel, and it was really nice to create the back-end part with this framework, also i talk a bit about C#. 
+                
+        </p>
+        <hr> 
+       
+
+        <hr> 
+        <h2>Educational</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="year">Currently</span>
+                <p>Bachelor's Degree in Computer Engineering</p>
+            </div>
+            
+            <div class="timeline-item">
+                <span class="year">Higher Technical Course</span>
+                <p>Electronics and Computers Level 5</p>
+            </div>
+        
+            <div class="timeline-item">
+                <span class="year">High School</span>
+                <p>Multimedia Course Level 4</p>
+            </div>
+        
+        </div>  
+      
+        </div>
+
+        <div class="experience">
+        <h2>Tecnologies</h2>
+            <ul class="skills">
+            <li>SQL</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Grafana</li>
+            <li>Linux</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>MCU (Aduino, ESP32)</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    
+</body>
+</html>

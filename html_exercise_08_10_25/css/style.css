@@ -1,0 +1,89 @@
+:root {
+    font-family: "Times New Roman", Times, serif;
+    --font-size: 16px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;              
+    flex-direction: row;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.page-background {
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+
+   
+    background-image: url('/IWB/html_exercise_08_10_25/images/img.png'); 
+    background-size: 60%; 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    
+  filter: grayscale(100%) opacity(0.3);}
+
+.sideBar {
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    background: #5e669ae6;
+
+    border-radius: 25px;
+   
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; /* ou center, se quiseres centralizar tudo */
+
+}
+.sideBar.show{
+    left: 0;
+}
+
+.sideBar img {
+    display: block;
+    margin: 0 auto;
+    border-bottom-left-radius: 50%;
+    width: 80%;
+}
+
+.mainContent {
+    flex-grow: 1;
+     /* 1. Transforma o elemento em um contêiner grid */
+    display: grid;
+    /* 2. Define as colunas do seu grid */
+    /* Este exemplo cria 3 colunas de largura igual (1 fração de espaço livre cada) */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 2%;
+    /* Adicionar um overflow-y, se necessário, para que o conteúdo possa rolar */
+    overflow-y: auto; 
+
+}
+.firstBox{
+    background-color: rgb(195, 195, 195);
+    border: 1px solid rgb(0, 0, 0); 
+    border-radius: 25px;
+    padding: 2px 5px; 
+    max-width: 100%; 
+}
+
+.secondBox{
+    padding: 2px 10px;
+}
+
+
+
